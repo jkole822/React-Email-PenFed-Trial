@@ -212,10 +212,15 @@ export const Footer: FC = () => {
   const renderRows = () =>
     elements.map((element, index) => (
       <Row backgroundColor={colors.neutral300} key={index}>
-        <Column styles={columnStyles}>
+        <Column>
           <GhostTable width={640}>
             <GhostCell>
-              <Container styles={innerContainerStyles}>{element}</Container>
+              <Container
+                styles={innerContainerStyles}
+                columnStyles={columnStyles}
+              >
+                {element}
+              </Container>
             </GhostCell>
           </GhostTable>
         </Column>
