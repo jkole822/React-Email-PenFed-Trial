@@ -9,7 +9,7 @@ export const imageStyles = {
   display: "inline-block",
   height: "auto",
   margin: "0 auto",
-  maxWidth: "315px",
+  maxWidth: "315px !important",
   width: "100%",
   position: "relative",
   right: "-30px",

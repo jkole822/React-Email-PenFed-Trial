@@ -8,7 +8,7 @@ export const imageStyles = {
   display: "inline-block",
   height: "auto",
   margin: "0 auto",
-  maxWidth: "223px",
+  maxWidth: "223px !important",
   width: "100%",
 };
 
