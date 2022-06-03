@@ -14,24 +14,22 @@ import { colors } from "../../../lib/theme";
 import { imageStyles } from "./styles";
 
 export const DividerOne: FC = () => (
-  <Table>
-    <Row backgroundColor={colors.neutral100}>
-      <Column>
-        <GhostTable width={640}>
-          <GhostCell>
-            <img
-              alt="alt_text"
-              //@ts-ignore
-              border="0"
-              height="28"
-              src="assets/images/dividerOne.png"
-              style={imageStyles}
-              width="640"
-            />
-            <Spacer height={25} />
-          </GhostCell>
-        </GhostTable>
-      </Column>
-    </Row>
-  </Table>
+  <Row backgroundColor={colors.neutral100}>
+    <Column>
+      <GhostTable width={640}>
+        <GhostCell>
+          <img
+            alt="alt_text"
+            //@ts-ignore
+            border="0"
+            height="28"
+            src="assets/images/dividerOne.png"
+            style={imageStyles}
+            width="640"
+          />
+          <Spacer height={25} />
+        </GhostCell>
+      </GhostTable>
+    </Column>
+  </Row>
 );

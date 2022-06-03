@@ -8,7 +8,6 @@ import { GhostTable } from "../../atoms/GhostTable";
 import { MenuLink } from "../../atoms/Typography";
 import { Row } from "../../atoms/Row";
 import { Spacer } from "../../atoms/Spacer";
-import { Table } from "../../atoms/Table";
 
 // Styles
 import { columnStyles, imageStyles, menuLinkStyles } from "./styles";
@@ -38,33 +37,31 @@ export const Header: FC = () => {
   return (
     <>
       <Spacer height={20} />
-      <Table>
-        <Row backgroundColor="transparent">
-          <Column styles={columnStyles}>
-            <GhostTable width={640}>
-              <GhostCell>
-                <img
-                  alt="alt_text"
-                  //@ts-ignore
-                  border="0"
-                  height="50"
-                  src="assets/images/logo.png"
-                  style={imageStyles}
-                  width="198"
-                />
-                <Spacer height={15} />
-              </GhostCell>
-            </GhostTable>
-          </Column>
-        </Row>
-        <Row backgroundColor="transparent">
-          <Column styles={columnStyles}>
-            <GhostTable width={640}>
-              <GhostCell>{renderLinks()}</GhostCell>
-            </GhostTable>
-          </Column>
-        </Row>
-      </Table>
+      <Row backgroundColor="transparent">
+        <Column styles={columnStyles}>
+          <GhostTable width={640}>
+            <GhostCell>
+              <img
+                alt="alt_text"
+                //@ts-ignore
+                border="0"
+                height="61"
+                src="assets/images/logo.png"
+                style={imageStyles}
+                width="198"
+              />
+              <Spacer height={15} />
+            </GhostCell>
+          </GhostTable>
+        </Column>
+      </Row>
+      <Row backgroundColor="transparent">
+        <Column styles={columnStyles}>
+          <GhostTable width={640}>
+            <GhostCell>{renderLinks()}</GhostCell>
+          </GhostTable>
+        </Column>
+      </Row>
       <Spacer height={20} />
     </>
   );

@@ -11,6 +11,7 @@ import { ContentBlockFive } from "./components/organisms/ContentBlockFive";
 import { DividerOne } from "./components/organisms/DividerOne";
 import { DividerTwo } from "./components/organisms/DividerTwo";
 import { Footer } from "./components/organisms/Footer";
+import { Table } from "./components/atoms/Table";
 import { ThinDivider } from "./components/organisms/ThinDivider";
 
 // Types
@@ -23,17 +24,19 @@ const App: FC<AppProps> = ({ setComments }) => {
 
   return (
     <CommentProvider value={setComments}>
-      <Header />
-      <ContentBlockOne />
-      <DividerOne />
-      <ContentBlockTwo />
-      <ThinDivider />
-      <ContentBlockThree />
-      <ThinDivider />
-      <ContentBlockFour />
-      <ContentBlockFive />
-      <DividerTwo />
-      <Footer />
+      <Table>
+        <Header />
+        <ContentBlockOne />
+        <DividerOne />
+        <ContentBlockTwo />
+        <ThinDivider />
+        <ContentBlockThree />
+        <ThinDivider />
+        <ContentBlockFour />
+        <ContentBlockFive />
+        <DividerTwo />
+        <Footer />
+      </Table>
     </CommentProvider>
   );
 };

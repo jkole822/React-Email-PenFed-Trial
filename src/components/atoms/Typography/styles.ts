@@ -33,5 +33,5 @@ export const menuLinkStyles = {
   ...commonStyles,
   color: colors.primary300,
   fontSize: "12px",
-  lineHeight: "15px",
+  lineHeight: "16px",
 };

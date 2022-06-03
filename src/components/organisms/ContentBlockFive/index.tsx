@@ -10,7 +10,6 @@ import { GhostTable } from "../../atoms/GhostTable";
 import { MainHeadline } from "../../atoms/Typography";
 import { Row } from "../../atoms/Row";
 import { Spacer } from "../../atoms/Spacer";
-import { Table } from "../../atoms/Table";
 
 // Styles
 import { colors } from "../../../lib/theme";
@@ -33,20 +32,20 @@ export const ContentBlockFive: FC = () => {
           {
             copy: "We work for you",
             icon: "assets/icons/heart.png",
-            iconHeight: 45,
-            iconWidth: 51,
+            iconHeight: 46,
+            iconWidth: 52,
           },
           {
             copy: "Applying for membership is easy",
             icon: "assets/icons/handshake.png",
-            iconHeight: 39,
-            iconWidth: 65,
+            iconHeight: 40,
+            iconWidth: 64,
           },
           {
             copy: "No military service required",
             icon: "assets/icons/people.png",
-            iconHeight: 38,
-            iconWidth: 69,
+            iconHeight: 40,
+            iconWidth: 70,
           },
         ]}
       />
@@ -77,5 +76,5 @@ export const ContentBlockFive: FC = () => {
       </Row>
     ));
 
-  return <Table>{renderRows()}</Table>;
+  return <>{renderRows()}</>;
 };

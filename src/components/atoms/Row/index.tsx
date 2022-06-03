@@ -17,7 +17,7 @@ export const Row: FC<RowProps> = ({
   innerContainerStyles,
   outerContainerStyles,
 }) => (
-  <tr className={className}>
+  <tr className={className} style={{ maxWidth: "640px" }}>
     <td style={outerContainerStyles}>
       <div
         //@ts-ignore

@@ -29,13 +29,16 @@ import { AlignEnum, VAlignEnum } from "../../../lib/typescript";
 
 export const ContentBlockFour: FC = () => {
   const bottomButton = (
-    <Button
-      alignment={AlignEnum.left}
-      href="#"
-      innerContainerStyles={{ textAlign: "start" }}
-    >
-      Learn More
-    </Button>
+    <>
+      <Button
+        alignment={AlignEnum.left}
+        href="#"
+        innerContainerStyles={{ textAlign: "start" }}
+      >
+        Learn More
+      </Button>
+      <Spacer height={25} />
+    </>
   );
 
   const bottomParagraph = (
@@ -140,10 +143,5 @@ export const ContentBlockFour: FC = () => {
       </Row>
     ));
 
-  return (
-    <>
-      <Table>{renderRows()}</Table>
-      <Spacer height={25} />
-    </>
-  );
+  return <>{renderRows()}</>;
 };

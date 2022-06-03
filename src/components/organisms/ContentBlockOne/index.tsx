@@ -160,7 +160,7 @@ export const ContentBlockOne: FC = () => {
   return (
     <>
       <Spacer height={35} />
-      <Table>{renderRows()}</Table>
+      {renderRows()}
       <Spacer height={25} />
     </>
   );

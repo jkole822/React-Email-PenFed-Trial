@@ -11,7 +11,6 @@ import { Row } from "../../atoms/Row";
 import { Spacer } from "../../atoms/Spacer";
 import { SocialMediaIconRow } from "../../molecules/SocialMediaIconRow";
 import { StoreIconRow } from "../../molecules/StoreIconRow";
-import { Table } from "../../atoms/Table";
 
 // Styles
 import { colors } from "../../../lib/theme";
@@ -129,7 +128,7 @@ export const Footer: FC = () => {
           {
             href: "#",
             icon: "assets/icons/linkedin.png",
-            iconWidth: 28,
+            iconWidth: 24,
             iconHeight: 24,
           },
           {
@@ -147,12 +146,12 @@ export const Footer: FC = () => {
           {
             href: "#",
             icon: "assets/icons/youtube.png",
-            iconWidth: 29,
-            iconHeight: 20,
+            iconWidth: 24,
+            iconHeight: 24,
           },
         ]}
       />
-      <Spacer height={30} color={colors.neutral300} />
+      <Spacer height={25} color={colors.neutral300} />
     </>
   );
 
@@ -161,7 +160,7 @@ export const Footer: FC = () => {
       <Paragraph styles={largeParagraphStyles}>
         Follow PenFed on Social Media
       </Paragraph>
-      <Spacer height={10} color={colors.neutral300} />
+      <Spacer height={5} color={colors.neutral300} />
     </>
   );
 
@@ -179,11 +178,11 @@ export const Footer: FC = () => {
             href: "#",
             icon: "assets/images/appStore.png",
             iconHeight: 39,
-            iconWidth: 118,
+            iconWidth: 132,
           },
         ]}
       />
-      <Spacer height={35} color={colors.neutral300} />
+      <Spacer height={25} color={colors.neutral300} />
     </>
   );
 
@@ -193,7 +192,7 @@ export const Footer: FC = () => {
       <Paragraph styles={largeParagraphStyles}>
         Download the PenFed App
       </Paragraph>
-      <Spacer height={10} color={colors.neutral300} />
+      <Spacer height={5} color={colors.neutral300} />
     </>
   );
 
@@ -227,5 +226,5 @@ export const Footer: FC = () => {
       </Row>
     ));
 
-  return <Table>{renderRows()}</Table>;
+  return <>{renderRows()}</>;
 };

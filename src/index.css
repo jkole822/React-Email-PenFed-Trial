@@ -5,12 +5,15 @@
   margin: 0;
   padding: 0;
   line-height: inherit;
+  -ms-text-size-adjust: 100% !important;
+  -webkit-text-size-adjust: 100% !important;
 }
 
+html,
 body {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 a {
@@ -41,26 +44,25 @@ table,
 tr,
 td {
   vertical-align: top;
-  border-collapse: collapse;
+  border-collapse: collapse !important;
+  border-spacing: 0 !important;
 }
 
-// MSO/IE Styles
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* MSO/IE Styles */
 .ie-container table,
 .mso-container table {
   table-layout: fixed;
 }
 
-.mso-table-space {
-  mso-table-lspace: 0pt;
-  mso-table-rspace: 0pt;
-}
-
-.mso-line-height {
-  mso-line-height-rule: exactly;
-}
-
-.mso-border-alt {
-  mso-border-alt: none;
+table,
+tr,
+td {
+  mso-table-lspace: 0pt !important;
+  mso-table-rspace: 0pt !important;
 }
 
 /* Responsive Design */
